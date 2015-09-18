@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Joyce.Dota2API.Business</name>
+    </assembly>
+    <members>
+        <member name="M:Dota2API.ApiHandler.GetPlayerSummary(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="accountIds">64-bit accountId</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dota2API.ApiHandler.GetHeroPortrait(System.String,Dota2API.Enums.HeroPortraitSize)">
+            <summary>
+            
+            </summary>
+            <param name="valveHeroName">Get the correct Hero name by calling GetHeroes and use the property ValveName</param>
+            <param name="size"></param>
+            <returns>byte[] if FullQualityVerticalPortrait .jpg image, else  .png image</returns>
+        </member>
+        <member name="M:Dota2API.ApiHandler.GetMatchHistory(System.String,System.String,System.Int32,Dota2API.Enums.GameMode,System.String,System.Int32,System.String,System.String,System.Boolean)">
+            <summary>
+            Gets matches based on parameters, to get next matches. Use the last match ID as the parameter startAtMatchId.
+            </summary>
+            <param name="startAtMatchId"></param>
+            <param name="accountId">32-bit account id</param>
+            <param name="heroId"></param>
+            <param name="gameMode"></param>
+            <param name="skill"></param>
+            <param name="minPlayers"></param>
+            <param name="leagueId"></param>
+            <param name="matchesRequested"></param>
+            <param name="tournamentGamesOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dota2API.ApiHandler.GetItemIcon(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="valveItemName">tango, blade_mail</param>
+            <returns>byte[] .png image</returns>
+        </member>
+        <member name="F:Dota2API.Enums.HeroPortraitSize.SmallHorizontalPortrait">
+            <summary>
+            59x33px
+            </summary>
+        </member>
+        <member name="F:Dota2API.Enums.HeroPortraitSize.LargeHorizontalPortrait">
+            <summary>
+            205x11px
+            </summary>
+        </member>
+        <member name="F:Dota2API.Enums.HeroPortraitSize.FullQualityHorizontalPortrait">
+            <summary>
+            256x114px
+            </summary>
+        </member>
+        <member name="F:Dota2API.Enums.HeroPortraitSize.FullQualityVerticalPortrait">
+            <summary>
+            234x272px .JPG
+            </summary>
+        </member>
+        <member name="F:Dota2API.Enums.PlayerStatus.Offline">
+            <summary>
+            Also set when the profile is Private
+            </summary>
+        </member>
+        <member name="P:Dota2API.Results.TournamentPrizePoolResult.PrizePool">
+            <summary>
+            Dollars
+            </summary>
+        </member>
+    </members>
+</doc>
